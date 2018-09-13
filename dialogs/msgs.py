@@ -77,8 +77,8 @@ class Msgs:
         },
 
         "announceTheWinner": {
-            'EN': u"\n\n\uD83C\uDF81 \u01C3 %s - Player %s wins \u01C3 \uD83C\uDF81 \n\nObrigado :)",
-            'PT-BR': "\n\n\uD83C\uDF81 \u01C3 %s - Jogador %s ganhou a partida \u01C3 \uD83C\uDF81 \n\nObrigado :)"
+            'EN': u"\n\n\U0001F389 \U0001F389 %s - Player %s wins \U0001F389 \U0001F389 \n\nObrigado :)",
+            'PT-BR': u"\n\n\U0001F389 \U0001F389 %s - Jogador %s ganhou a partida \U0001F389 \U0001F389 \n\nObrigado :)"
         },
 
 

@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import sys
 from settings.settings import *
 from gameEngine import *
@@ -9,7 +12,6 @@ if __name__ == '__main__':
     core = TicTacToe(s)
 
     ui = Console(s, core)
-
 
 sys.exit(0)
 
