@@ -7,30 +7,35 @@ class Msgs:
     WARMING = {
         "playerSetWrong": {
             'EN': "Please, follow the rules!",
-            'PT-BR': "Por favor, siga as regras!"
+            'PT-BR': "Por favor, siga as regras!",
+            'CN':"请看游戏规则！"
         },
 
         "wrongMove": {
             'EN': u"%s \u2190 this move command is not allowed!",
-            'PT-BR': u"%s \u2190 Esse comando é ínvalido!"
+            'PT-BR': u"%s \u2190 Esse comando é ínvalido!",
+            'CN':u"%s \u2190 这种移动是不允许的。"
 
         },
 
         "coordUsed": {
             'EN': u"%s \u2190 This coordinate has already been used",
-            'PT-BR': u"%s \u2190 Essa coordenada já foi usada"
+            'PT-BR': u"%s \u2190 Essa coordenada já foi usada",
+            'CN':u"%s \u2190 这个坐标已经被占用。"
         }
     }
 
     ERROR = {
         "inputTypeIsWrong": {
             'EN' : "Make sure that you are using the right TYPE for this setting, anyway Default value will be used!",
-            'PT-BR' : "Verifique o tipo usado na configuração, de qualquer forma a configuração será usada!"
+            'PT-BR' : "Verifique o tipo usado na configuração, de qualquer forma a configuração será usada!",
+            'CN': "请确认你输入正确，否则默认值会被使用。"
         },
 
         "playerValue": {
             'EN': "Only 1 character is accepted and can not be empty",
-            'PT-BR': "Apenas 1 caractere é aceito e não pode ser vazio"
+            'PT-BR': "Apenas 1 caractere é aceito e não pode ser vazio",
+            'CN': "只能输入一个字母，而且不能留空。"
         }
     }
 
@@ -38,22 +43,26 @@ class Msgs:
 
         "welcome": {
             'EN': u"\u2716 \u25CF \u25BC Welcome to Tic Tac Toe 2.0  \u25BC \u25CF \u2716\n:....... Good lunk and Have Fun ......:\n\n",
-            'PT-BR': u"\u2716 \u25CF \u25BC Bem vindo ao Tic Tac Toe 2.0  \u25BC \u25CF \u2716\n:....... Boa sorte e divirta-se  ......:\n\n"
+            'PT-BR': u"\u2716 \u25CF \u25BC Bem vindo ao Tic Tac Toe 2.0  \u25BC \u25CF \u2716\n:....... Boa sorte e divirta-se  ......:\n\n",
+            'CN': u"\u2716 \u25CF \u25BC 欢迎来到 Tic Tac Toe 2.0 \u25BC \u25CF \u2716\n:....... 祝你好运！.......:\n\n"
         },
 
         "playerSizeChars": {
             'EN': "Min 2 characters",
-            'PT-BR': "Min 2 caracteres"
+            'PT-BR': "Min 2 caracteres",
+            'CN': "至少2个字母"
         },
 
         "playerName": {
-            'EN': "What is player name?",
-            'PT-BR': "Qual é o nome do jogador?"
+            'EN': "What is your name?",
+            'PT-BR': "Qual é o nome do jogador?",
+            'CN': "你的名字？"
         },
 
         "playerSet": {
             'EN': "Player %s has been set",
-            'PT-BR': "O nome do jogador %s foi definido"
+            'PT-BR': "O nome do jogador %s foi definido",
+            'CN': "玩家 %s 已经被加入。"
         },
 
         "winnerAnnounce": {
