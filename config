@@ -1,6 +1,6 @@
 #config file
-battlefieldSize:3
+battlefieldSize:6
 #playerOneSymbol:
 #playerTwoSymbol:
 #playerAiSymbol:
-#language:PT-BR
+language:CN

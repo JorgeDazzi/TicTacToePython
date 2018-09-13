@@ -67,27 +67,32 @@ class Msgs:
 
         "winnerAnnounce": {
             'EN': u"\n\n\uD83C\uDF81 \u01C3 %s - Player %s wins \u01C3 \uD83C\uDF81 \n\nThank you :)",
-            'PT-BR': u"\n\n\uD83C\uDF81 \u01C3 %s - Jogador %s ganhou \u01C3 \uD83C\uDF81 \n\nObrigado :)"
+            'PT-BR': u"\n\n\uD83C\uDF81 \u01C3 %s - Jogador %s ganhou \u01C3 \uD83C\uDF81 \n\nObrigado :)",
+            'CN':u"\n\n\uD83C\uDF81 \u01C3 %s -玩家 %s 赢了 \u01C3 \uD83C\uDF81 \n\n谢谢！:)"
         },
 
         "moveInstruction": {
             'EN': "(Move instruction: <Row,Column> (Nº between 0 and %s) ... ex 0,1)",
-            'PT-BR': "(Instruções: <Linha,Coluna> (Nº entre 0 e %s) ... ex 0,1)"
+            'PT-BR': "(Instruções: <Linha,Coluna> (Nº entre 0 e %s) ... ex 0,1)",
+            'CN': "移动规则：<行，列> （号码在 0 和 %s 之间）。。。例如 0,1"
         },
 
         "move": {
             'EN': "%s - Player Nº %s :: this is your turn, please make your move...",
-            'PT-BR': "%s - Jogador Nº %s :: Esse é seu turno, faça sua jogada..."
+            'PT-BR': "%s - Jogador Nº %s :: Esse é seu turno, faça sua jogada...",
+            'CN': "%s - 玩家 Nº %s ：：轮到你了，请走下一步。。。"
         },
 
         "drawGame": {
             'EN': "There are no winners, the game ended in a draw. :/",
-            'PT-BR': "Não há ganhador, o Jogo terminou empatado :/"
+            'PT-BR': "Não há ganhador, o Jogo terminou empatado :/",
+            'CN': "没有赢家，游戏以扯平结束。:/"
         },
 
         "announceTheWinner": {
             'EN': u"\n\n\U0001F389 \U0001F389 %s - Player %s wins \U0001F389 \U0001F389 \n\nObrigado :)",
-            'PT-BR': u"\n\n\U0001F389 \U0001F389 %s - Jogador %s ganhou a partida \U0001F389 \U0001F389 \n\nObrigado :)"
+            'PT-BR': u"\n\n\U0001F389 \U0001F389 %s - Jogador %s ganhou a partida \U0001F389 \U0001F389 \n\nObrigado :)",
+            'CN': u"\n\n\U0001F389 \U0001F389 %s - 玩家 %s 赢了！\U0001F389 \U0001F389 \n\n 恭喜！"
         },
 
 
