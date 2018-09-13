@@ -58,6 +58,7 @@ class TicTacToe:
 
     def setPlot(self, plot):
         self.__battlefield[int(plot[0])][int(plot[2])] = self.getCurrentPlayer().getStamp()
+        return self.getWinner()
 
     def printBattlefield(self):
         x = 0
@@ -94,6 +95,69 @@ class TicTacToe:
                 line += "---+" * (len(self.__battlefield) - 1)
                 line += "-" * 3
                 print(line)
+
+    def getWinner(self):
+        """
+        Looking for a Winner and Draw game
+        :return: 0 = continue the game | 1 = Draw | 9 = Winner
+        """
+        count = None
+
+        #Row
+        for row in self.__battlefield:
+            count = 0
+            for cols in row:
+                if cols == self.getCurrentPlayer().getStamp():
+                    count += 1
+
+            # Report a Winner
+            if count == self.getBattlefieldSize():
+                return 9
+
+        #Column
+        for y in range(self.getBattlefieldSize()):
+            count = 0
+            for x in range(self.getBattlefieldSize()):
+                if self.__battlefield[x][y] == self.getCurrentPlayer().getStamp():
+                    count += 1
+
+            #Report Winner
+            if count == self.getBattlefieldSize():
+                return 9
+
+        #Cross
+        count = 0
+        for d in range(self.getBattlefieldSize()):
+            if self.__battlefield[d][d] == self.getCurrentPlayer().getStamp():
+                count += 1
+
+        # Report Winner
+        if count == self.getBattlefieldSize():
+            return 9
+
+        #Inverted Cross
+        count = 0
+        y = self.getBattlefieldSize() -1
+        for x in range(self.getBattlefieldSize()):
+            if self.__battlefield[x][y-x] == self.getCurrentPlayer().getStamp():
+                count += 1
+
+        # Report Winner
+        if count == self.getBattlefieldSize():
+            return 9
+
+        #Draw
+        count = 0
+        for x in self.__battlefield:
+            for y in x:
+                if y != self.__config.EMPTY:
+                    count += 1
+
+        #Report Draw and
+        if count == (self.getBattlefieldSize() * self.getBattlefieldSize()):
+            return 1
+
+        return 0
 
 
 

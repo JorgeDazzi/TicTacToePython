@@ -78,6 +78,18 @@ class Msgs:
         "move": {
             'EN': "%s - Player Nº %s :: this is your turn, please make your move...",
             'PT-BR': "%s - Jogador Nº %s :: Esse é seu turno, faça sua jogada..."
-        }
+        },
+
+        "drawGame": {
+            'EN': "There are no winners, the game ended in a draw. :/",
+            'PT-BR': "Não há ganhador, o Jogo terminou empatado :/"
+        },
+
+        "announceTheWinner": {
+            'EN': u"\n\n\U0001F389 \U0001F389 %s - Player %s wins \U0001F389 \U0001F389 \n\nObrigado :)",
+            'PT-BR': u"\n\n\U0001F389 \U0001F389 %s - Jogador %s ganhou a partida \U0001F389 \U0001F389 \n\nObrigado :)"
+        },
+
+
 
     }

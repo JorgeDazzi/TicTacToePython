@@ -51,7 +51,8 @@ class Console:
         max = self.__size -1
 
     def getCoordValidation(self, x, y):
-        if self.__core.getBattlefield()[x][y] == self.__config.EMPTY:
+        print(self.__config.EMPTY)
+        if self.__core.getBattleField()[x][y] == self.__config.EMPTY:
             return True
         else:
             return False
@@ -68,7 +69,7 @@ class Console:
                 move = input()
 
                 if bool(re.match('^[0-%s],[0-%s]$' % (self.__size-1, self.__size-1), move)):
-                    if self.getCoordValidation(int(move[0]), int(move[1])):
+                    if self.getCoordValidation(int(move[0]), int(move[2])):
                         return move
                     else:
                         print(Msgs.WARMING.get("coordUsed").get(self.__config.LANGUAGE) % move)
@@ -109,10 +110,17 @@ class Console:
                 move = self.getPlayerMove(player)
 
             #Plot
-            self.__core.setPlot(move)
+            winner = self.__core.setPlot(move)
 
             #Print Board
             self.__core.printBattlefield()
+
+            if winner == 9:
+                print(Msgs.UI.get("announceTheWinner").get(self.__config.LANGUAGE) % (player.getName(), player.getId()))
+                sys.exit(0)
+            elif winner == 1:
+                print(Msgs.UI.get("drawGame").get(self.__config.LANGUAGE))
+                sys.exit(0)
 
             #Set next Turn
             self.__core.setNextTurn()
