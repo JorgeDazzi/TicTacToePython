@@ -61,7 +61,8 @@ class TicTacToe:
         return self.getWinner()
 
     def printBattlefield(self):
-        x = 0
+        #Don't initialize x here only y 
+        # x = 0
         y = 0
         line = "   "
 
@@ -76,7 +77,8 @@ class TicTacToe:
         #print Battlefield
         for r in self.__battlefield: #rows
             x = 0
-            line = str(x) + " ."
+           
+            line = str(y) + " ."
 
             for c in r: #cols
                 line += " " + c + " "
@@ -84,17 +86,20 @@ class TicTacToe:
                 if x < len(self.__battlefield)-1:
                     line += "|"
 
-                x += 1
+                    x += 1
 
             y += 1
 
             print(line)
+            #print(y)
 
             if y < len(self.__battlefield):
                 line = "   "
                 line += "---+" * (len(self.__battlefield) - 1)
                 line += "-" * 3
                 print(line)
+
+  
 
     def getWinner(self):
         """
